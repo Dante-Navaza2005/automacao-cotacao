@@ -1,0 +1,49 @@
+selenium maquina de automação web (todas as tarefas q vc faz dentro do navegador)
+
+selenium controla navegador vs pyautogui q controla teclado mouse e teclado
+
+webdriver arquivo que permite o selenium controlar o navegador
+
+from selenium import webdriver importa so o webdriver
+
+
+
+PARA USAR WEB DRIVER NO BRAVE 
+driver_path = r"C:\Users\Dante\Documents\Python\chromedriver.exe"
+brave_path = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+
+option = webdriver.ChromeOptions()
+option.binary_location = brave_path
+navegador = webdriver.Chrome(executable_path=driver_path, options=option)
+
+
+
+navegador.get("link") entra automaticamente em link mencionado
+
+navegador.findelement().send_keys() (escreve no elemento)
+
+navegador.findelement().click() (clicka duh)
+
+navegador.findelement().get_attribute("item do html do inspecionar") pega alguma inforacao
+
+xpath utilizado como id de cada elemento de um site, para achar vc clica no elemento inspecionado e copia o xpath
+
+navegador.findelement("xpath", "qual é o xpath dele").click (escreve no elemento)
+
+xpath SEMPRE usa ASPAS SIMPLES
+
+from selenium.webdriver.common.keys import Keys permite vc utilizar chaves no selenium
+
+send_keyes(Keys.ENTER) voce pressiona o enter
+
+com selenium sempre importa 
+from selenium.webdriver.common.keys import Keys
+from selenium import webdriver
+
+cotacao_ouro = cotacao_ouro.replace(",", '.') troca virgula por ponto
+
+navegador.quit() sai do navegador
+
+tabela.loc[linha, coluna] procura cera linha e coluna
+
+tabela.to_excel("Produtos.xlsx", index=False) exporta tabela nova para excel sem indice ao lado
